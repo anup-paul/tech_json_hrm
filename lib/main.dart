@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:tech_json_hrm/pages/bottom_nav_bar/bottom_nav_bar.dart';
 import 'package:tech_json_hrm/pages/home/view/home_screen.dart';
 
 void main() {
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
               colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
               useMaterial3: true,
             ),
-            home: const HomeScreen(),
+            home:  HomePage(),
           );
         });
   }
