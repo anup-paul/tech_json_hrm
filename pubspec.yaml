@@ -38,6 +38,7 @@ dependencies:
   flutter_screenutil: ^5.9.0
   slider_button: ^2.1.0
   crystal_navigation_bar: ^1.0.2
+  flutter_spinkit: ^5.2.1
 
 dev_dependencies:
   flutter_test:
