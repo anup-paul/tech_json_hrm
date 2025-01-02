@@ -90,7 +90,7 @@ class _LoginPageState extends State<LoginPage> {
                       },
                       onChanged: (value) => _password = value,
                     ),
-                    SizedBox(height: 32),
+                    const SizedBox(height: 32),
 
                     // Login Button
                     ElevatedButton(
@@ -122,9 +122,9 @@ class MainScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('HRM System Dashboard'),
+        title: const Text('HRM System Dashboard'),
       ),
-      body: Center(
+      body: const Center(
         child: Text('Welcome to HRM System!'),
       ),
     );

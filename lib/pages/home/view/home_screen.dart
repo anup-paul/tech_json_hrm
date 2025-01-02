@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:slider_button/slider_button.dart';
+import 'package:tech_json_hrm/pages/home/view/new_home_screen.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -42,16 +43,24 @@ class HomeScreen extends StatelessWidget {
                             fontSize: 16.sp,
                             fontWeight: FontWeight.bold),
                       ),
-                      trailing: Container(
-                          padding:
-                          EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
-                          decoration: BoxDecoration(
-                              shape: BoxShape.circle,
-                              color: Colors.white.withOpacity(0.2)),
-                          child: const Icon(
-                            Icons.notification_important_sharp,
-                            color: Colors.white,
-                          ))),
+                      trailing: InkWell(
+                        onTap: (){
+                          Navigator.push(
+                            context,
+                            MaterialPageRoute(builder: (context) => const NewHomeScreen()),
+                          );
+                        } ,
+                        child: Container(
+                            padding:
+                            EdgeInsets.symmetric(vertical: 10.h, horizontal: 10.w),
+                            decoration: BoxDecoration(
+                                shape: BoxShape.circle,
+                                color: Colors.white.withOpacity(0.2)),
+                            child: const Icon(
+                              Icons.notification_important_sharp,
+                              color: Colors.white,
+                            )),
+                      )),
                   SizedBox(
                     height: 10.h,
                   ),
